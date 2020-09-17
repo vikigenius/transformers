@@ -7,8 +7,7 @@ rouge-score
 tensorflow_datasets
 pytorch-lightning==0.8.5
 matplotlib
-git-python==1.0.3
-faiss
+gitpython
 streamlit
 elasticsearch
 pandas
