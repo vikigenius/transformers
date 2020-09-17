@@ -7,15 +7,13 @@ export PYTHONPATH="../":"${PYTHONPATH}"
 python finetune.py \
     --learning_rate=3e-5 \
     --fp16 \
-    --fp16_opt_level=O1
+    --fp16_opt_level=O1 \
     --gpus 8 \
     --do_train \
     --n_val 100 \
     --val_check_interval 0.5 \
     --eval_max_gen_length 30 \
-    --eval_beams 30 \
-    --data_dir ../../data/SQG/processed/
-    --output_dir ../../data/SQG/outputs/
+    --eval_beams 4 \
     --num_train_epochs 6 \
-    --model_name_or_path facebook/bart-large
+    --model_name_or_path facebook/bart-large \
     "$@"
