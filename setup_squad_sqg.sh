@@ -2,7 +2,7 @@
 
 git clone https://github.com/NVIDIA/apex ~/apex &
 pip install -e .
-pip install -r requirements.txt
+pip install -r examples/requirements.txt
 wait
 
 cp apex.patch ~/apex

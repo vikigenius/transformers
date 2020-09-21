@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 mkdir -p data/squad_sqg
-cp s3://lex-labs-python-wd/ML/SQG/SQuAD1.1/datasets/squad11_sqg.train.tsv data/
+aws s3 cp s3://lex-labs-python-wd/ML/SQG/SQuAD1.1/datasets/squad11_sqg.train.tsv data/
 
 cat data/squad11_sqg.train.tsv | cut -f1 > source
 cat data/squad11_sqg.train.tsv | cut -f2 > target
