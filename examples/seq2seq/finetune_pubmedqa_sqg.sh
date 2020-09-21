@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # Add parent directory to python path to access lightning_base.py
 export PYTHONPATH="../":"${PYTHONPATH}"
 
