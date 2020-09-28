@@ -7,7 +7,7 @@ cat data/hqa_canlii.tsv | cut -f2 > target
 head -n 2900 source > data/hqa_canlii_sqg/train.source
 head -n 2900 target > data/hqa_canlii_sqg/train.target
 
-tail -n 94 data/hqa_canlii.tsv | awk -FS="\t" '!seen[$2]++' > valtest
+tail -n 94 data/hqa_canlii.tsv > valtest
 
 cat valtest | cut -f3 > data/hqa_canlii_sqg/val.source
 cat valtest | cut -f2 > data/hqa_canlii_sqg/val.target

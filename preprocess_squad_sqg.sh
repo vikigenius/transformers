@@ -8,7 +8,7 @@ cat data/squad11_sqg.train.tsv | cut -f2 > target
 head -n 85000 source > data/squad_sqg/train.source
 head -n 85000 target > data/squad_sqg/train.target
 
-tail -n 2599 data/squad11_sqg.train.tsv | awk '!seen[$1]++' > valtest
+tail -n 2599 data/squad11_sqg.train.tsv > valtest
 
 split -n2 valtest
 

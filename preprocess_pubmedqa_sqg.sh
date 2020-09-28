@@ -8,7 +8,7 @@ cat data/pubmedqa_pq_pairs.tsv | cut -f2 > target
 head -n 138000 source > data/pubmedqa_sqg/train.source
 head -n 138000 target > data/pubmedqa_sqg/train.target
 
-tail -n 2199 data/pubmedqa_pq_pairs.tsv | awk '!seen[$1]++' > valtest
+tail -n 2199 data/pubmedqa_pq_pairs.tsv > valtest
 
 split -n2 valtest
 
